@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import OffcanvasExample from './components/DrawerAppBar';
+import Carousel from './components/Carousel';
+import Cardes from './components/Cardes';
+import Nav from './components/Nav';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <OffcanvasExample />
+      <Carousel />
+      <div className='store'>
+        <Nav />
+        <Cardes />
+      </div>
+    </>
   );
 }
-
 export default App;
